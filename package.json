@@ -1,0 +1,14 @@
+{
+  "name": "1stnation-us",
+  "version": "1.0.0",
+  "description": "1st Nation Foundation — Reclaim Your Indigenous Status (1stnation.us)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

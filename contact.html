@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Request Reclamation Guidance | 1st Nation Foundation</title>
+  <meta name="description" content="Request guidance from the 1st Nation Foundation on searching the Dawes Rolls, documenting your lineage, and reclaiming your Indigenous status.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="1st Nation Foundation logo">
+        <span>1st <b>Nation</b> Foundation</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="history.html">The Paper Trail</a>
+        <a href="sovereignty.html">The Modern Fight</a>
+        <a href="reclaim.html">Reclaim Your Status</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="nav-cta" aria-current="page">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="band dark page-hero on-dark">
+      <div class="wrap">
+        <span class="eyebrow on-dark">Contact the Foundation</span>
+        <h1>Tell Us Where You Are. <span class="em brass">We'll Help You Get Home.</span></h1>
+        <p class="lead">Whether you're just beginning to ask questions, you've found an ancestor on the rolls, or you're ready to take formal steps to re-identify — reach out. A member of the 1st Nation Foundation will respond with guidance for your next step.</p>
+      </div>
+    </section>
+
+    <section class="band parchment">
+      <div class="wrap">
+        <div class="split" style="align-items: start;">
+          <div class="reveal">
+            <div class="ledger-head">
+              <span class="no">Your Entry</span>
+              <h2>Request More Information</h2>
+            </div>
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required autocomplete="name">
+                  <span class="err">Please enter your name.</span>
+                </div>
+                <div class="field">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required autocomplete="email">
+                  <span class="err">Please enter a valid email address.</span>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="state">State / Location</label>
+                  <input type="text" id="state" name="state" autocomplete="address-level1">
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="tribe">Ancestral Nation (if known)</label>
+                  <select id="tribe" name="tribe">
+                    <option value="Unknown" selected>I don't know yet</option>
+                    <option value="Cherokee">Cherokee</option>
+                    <option value="Choctaw">Choctaw</option>
+                    <option value="Chickasaw">Chickasaw</option>
+                    <option value="Muscogee (Creek)">Muscogee (Creek)</option>
+                    <option value="Seminole">Seminole</option>
+                    <option value="Other Nation (recognized or unrecognized)">Other Nation (recognized or unrecognized)</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="dawes">Have you searched the Dawes Rolls?</label>
+                  <select id="dawes" name="dawes">
+                    <option value="Not yet" selected>Not yet</option>
+                    <option value="Yes — found an ancestor">Yes — I found an ancestor</option>
+                    <option value="Yes — still searching">Yes — still searching</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+                <div class="field full">
+                  <label for="message">Your Story &amp; Your Question *</label>
+                  <textarea id="message" name="message" required placeholder="Tell us what you know — family names, places, stories passed down — and what guidance you're looking for."></textarea>
+                  <span class="err">Please share a brief message so we can guide you well.</span>
+                </div>
+                <div class="field full" style="flex-direction: row; align-items: flex-start; gap: 0.7rem;">
+                  <input type="checkbox" id="consent" name="consent" required style="margin-top: 0.35rem; width: 18px; height: 18px;">
+                  <label for="consent" style="text-transform: none; letter-spacing: normal; font-weight: 400; font-size: 0.92rem; color: var(--ink);">I consent to the 1st Nation Foundation contacting me by email or phone regarding my request. *</label>
+                  <span class="err" style="flex-basis: 100%;">Consent is required so we can respond to you.</span>
+                </div>
+              </div>
+              <div class="btn-row">
+                <button type="submit" class="btn btn-oxblood">Send My Request</button>
+              </div>
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="reveal">
+            <figure style="margin-bottom: 2rem;">
+              <img src="images/young-woman-regalia.jpg" alt="A young Afro-Indigenous woman in traditional regalia" style="border: 1px solid var(--rule);">
+            </figure>
+            <div class="prose">
+              <h3 class="em">What happens after you write</h3>
+              <p>Your request goes directly to the Foundation team. We review where you are in your journey — whether that's the first family conversation or a found enrollment card — and respond with concrete next steps: where to search, what to order, what your documents mean, and how to proceed with re-identification.</p>
+              <h3 class="em">Before you write, if you can</h3>
+              <p>Run a first search at <a href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener">okhistory.org/research/dawes</a> and note any names or roll numbers you find. It isn't required — but it gives us a head start on guiding you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="">
+            <span>1st <b class="brass">Nation</b> Foundation</span>
+          </div>
+          <p>Helping Afro-Indigenous descendants research their lineage, correct the record, and reclaim the identity that was reclassified away on government ledgers.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="history.html">The Paper Trail</a></li>
+            <li><a href="sovereignty.html">The Modern Fight</a></li>
+            <li><a href="reclaim.html">Reclaim Your Status</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Act Now</h4>
+          <ul>
+            <li><a href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener">Search the Dawes Rolls</a></li>
+            <li><a href="https://www.archives.gov/research/native-americans/dawes" target="_blank" rel="noopener">National Archives — Dawes Records</a></li>
+            <li><a href="contact.html">Request More Information</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>&copy; <span id="year">2026</span> 1st Nation Foundation &middot; 1stnation.us</span>
+        <span class="em" style="font-family: Georgia, serif;">Reclassified no more.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
