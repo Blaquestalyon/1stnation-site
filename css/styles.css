@@ -247,7 +247,8 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.55rem); }
 .band.oxblood-band { background: var(--oxblood); color: var(--bone); }
 
 .band.dark h1, .band.dark h2, .band.dark h3 { color: var(--bone); }
-.band.dark a { color: var(--brass-light); }
+/* Inline links on dark bands — exclude .btn so buttons keep their own palette */
+.band.dark a:not(.btn) { color: var(--brass-light); }
 
 /* ---------- Hero (home) ---------- */
 .hero { position: relative; overflow: hidden; }
