@@ -82,19 +82,30 @@ Railway rebuilds take **~80–260 seconds** from push to live. To trigger a rede
 | `--parchment` | `#f1e8d8` | Soft warm surface |
 | `--bone` | `#fbf7ee` | Lightest surface, body background |
 
+### November 2026 cinematic redesign
+
+The look now follows the owner's key art (`images/hero-home.webp`, 1672×941): dark warm bands with golden glow, glossy teal/oxblood brass-edged panels, Playfair Display + Source Sans 3 (Google Fonts), gold-gradient headline text.
+
+- **Home hero** is the key art itself. Clickable `.hotspot` links sit over its five cards and bottom icon bar, positioned in % of the image. If the art is replaced, re-measure those % values in `index.html`. Under 760px the art's bar hotspots hide and `.hero-paths` (HTML cards) shows instead.
+- **Interior page heroes** use generated art via `style="--hero:url(/images/art-<page>.webp)"` — the path must be absolute (root-relative), because the `url()` resolves against the stylesheet. Art was generated with Higgsfield GPT Image 2 using the key art as style reference; `art-reclaim.webp` was cropped/padded left so the people sit right of the headline.
+- **CTA bands** with class `art` use `images/art-tree.webp`.
+- **`.path-bar`** (icon strip above every footer) mirrors the key art's bottom bar. Icons live in `images/icons.svg` (`<use href="/images/icons.svg#id">`).
+- New token `--teal` / `--teal-light` added beside the original palette.
+- The old `.hero-right` / `.hero-medallion` block on the home page was retired — the key art carries the logo. The header `.logo-plate` stays.
+
 ### Critical CSS rules that MUST be preserved
 
 These were added on top of the original zip and are essential to the polished look. If you ever apply a fresh zip dump, you must re-apply these:
 
 1. **`.brand .logo-plate`** (~lines 143–169) — circular header medallion: 72×72, brass ring + thin oxblood outline + ink interior + brightness/contrast filter on the inner `<img>`.
-2. **`.hero-right`, `.hero-medallion`, `.hero-medallion-plate`** (~lines 266–318) — the large feature medallion above the family photo on `index.html`. Sized `clamp(180px, 22vw, 240px)`.
+2. ~~`.hero-right`, `.hero-medallion`~~ — retired in the November 2026 redesign (see above).
 3. **`.band.dark a:not(.btn) { color: var(--brass-light); }`** (~line 250–251) — the `:not(.btn)` is critical. Without it, `.btn-brass` text turns wash-light on brass and becomes unreadable.
 4. **`.site-header .wrap { min-height: 92px; }`** — raised from the original 76px to fit the medallion.
 
 ### Critical HTML wrappers that MUST be preserved
 
 1. **All 6 pages** wrap the header logo in `<span class="logo-plate"><img src="images/logo.png" .../></span>`. Bare `<img>` will look broken — black logo on near-black header.
-2. **`index.html` hero** uses `<div class="hero-right reveal">` wrapping the `.hero-medallion` plus the family-porch `<figure>`. Replacing this with a bare figure removes the feature medallion.
+2. **`index.html` hero** is `.hero-art` (key art + hotspots + `.hero-paths`). Keep the `sr-only` `<h1>` and the hotspot `aria-label`s — the art's text is an image.
 
 ---
 
@@ -126,7 +137,7 @@ The pattern that's been working:
 
 - **Never overwrite `css/styles.css` blindly** with a zip dump. Diff first; the critical rules in section 4 are likely missing from any clean export.
 - **Never strip the `.logo-plate` span** from the header on any page.
-- **Never strip the `.hero-right` wrapper** from `index.html`.
+- **Never strip the `.hero-art` hotspots or `sr-only` h1** from `index.html`.
 - **For GitHub URLs, always use `api_credentials=["github"]` with `gh`/`git`**, not `browser_task`.
 - **Railway redeploys are automatic on push to `main`** — no manual trigger needed.
 

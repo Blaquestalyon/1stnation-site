@@ -32,6 +32,31 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
+  /* ---------- Stat count-up ---------- */
+  var nums = document.querySelectorAll('.stat .num');
+  var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && nums.length && !still) {
+    var countIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        countIo.unobserve(e.target);
+        var el = e.target;
+        var m = el.textContent.match(/^([\d,.]+)(.*)$/);
+        if (!m) return;
+        var end = parseFloat(m[1].replace(/,/g, ''));
+        var dec = (m[1].split('.')[1] || '').length;
+        var t0 = performance.now();
+        (function tick(now) {
+          var p = Math.min((now - t0) / 1600, 1);
+          var v = end * (1 - Math.pow(1 - p, 3));
+          el.textContent = v.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec }) + m[2];
+          if (p < 1) requestAnimationFrame(tick);
+        })(t0);
+      });
+    }, { threshold: 0.5 });
+    nums.forEach(function (el) { countIo.observe(el); });
+  }
+
   /* ---------- Contact form → Airtable ----------
      WIRING INSTRUCTIONS (see README.md for full detail):
 

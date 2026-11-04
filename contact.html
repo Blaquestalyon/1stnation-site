@@ -6,6 +6,9 @@
   <title>Contact Us — Request Reclamation Guidance | 1st Nation Foundation</title>
   <meta name="description" content="Request guidance from the 1st Nation Foundation on searching the Dawes Rolls, documenting your lineage, and reclaiming your Indigenous status.">
   <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Source+Sans+3:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -30,7 +33,8 @@
 
   <main>
 
-    <section class="band dark page-hero on-dark">
+    <section class="band dark page-hero on-dark" style="--hero:url(/images/art-contact.webp)">
+      <div class="dust" aria-hidden="true"></div>
       <div class="wrap">
         <span class="eyebrow on-dark">Contact the Foundation</span>
         <h1>Tell Us Where You Are. <span class="em brass">We'll Help You Get Home.</span></h1>
@@ -46,7 +50,7 @@
               <span class="no">Your Entry</span>
               <h2>Request More Information</h2>
             </div>
-            <form id="contact-form" novalidate>
+            <form id="contact-form" class="form-card" novalidate>
               <div class="form-grid">
                 <div class="field">
                   <label for="name">Full Name *</label>
@@ -109,8 +113,8 @@
           </div>
 
           <div class="reveal">
-            <figure style="margin-bottom: 2rem;">
-              <img src="images/young-woman-regalia.jpg" alt="A young Afro-Indigenous woman in traditional regalia" style="border: 1px solid var(--rule);">
+            <figure class="framed" style="margin-bottom: 2rem;">
+              <img src="images/young-woman-regalia.jpg" alt="A young Afro-Indigenous woman in traditional regalia">
             </figure>
             <div class="prose">
               <h3 class="em">What happens after you write</h3>
@@ -124,6 +128,17 @@
     </section>
 
   </main>
+
+  <nav class="path-bar" aria-label="Your path">
+    <ul>
+        <li><a href="history.html"><svg aria-hidden="true"><use href="/images/icons.svg#doc"/></svg><span>Historical Records</span></a></li>
+        <li><a href="resources.html"><svg aria-hidden="true"><use href="/images/icons.svg#search"/></svg><span>Ancestry Research</span></a></li>
+        <li><a href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="/images/icons.svg#scroll"/></svg><span>Dawes Rolls</span></a></li>
+        <li><a href="reclaim.html#lineage"><svg aria-hidden="true"><use href="/images/icons.svg#tree"/></svg><span>Family Lineage</span></a></li>
+        <li><a href="reclaim.html#scope"><svg aria-hidden="true"><use href="/images/icons.svg#idcard"/></svg><span>Self-Identification</span></a></li>
+        <li><a href="contact.html"><svg aria-hidden="true"><use href="/images/icons.svg#book"/></svg><span>Guidance</span></a></li>
+    </ul>
+  </nav>
 
   <footer class="site-footer">
     <div class="wrap">
@@ -156,7 +171,7 @@
       </div>
       <div class="footer-legal">
         <span>&copy; <span id="year">2026</span> 1st Nation Foundation &middot; 1stnation.us</span>
-        <span class="em" style="font-family: Georgia, serif;">Reclassified no more.</span>
+        <span class="em">Reclassified no more.</span>
       </div>
     </div>
   </footer>

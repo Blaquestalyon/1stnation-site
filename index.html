@@ -6,10 +6,13 @@
   <title>1st Nation Foundation — Reclaim Your Indigenous Status</title>
   <meta name="description" content="Afro-Indigenous Americans were reclassified as 'negro,' 'colored,' and 'black' on government ledgers like the Dawes Rolls. The 1st Nation Foundation helps descendants research their lineage and reclaim their Indigenous identity.">
   <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Source+Sans+3:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <meta property="og:title" content="1st Nation Foundation — Reclaim Your Indigenous Status">
   <meta property="og:description" content="The ledger said one thing. Your bloodline says another. Search the Dawes Rolls and begin your reclamation.">
-  <meta property="og:image" content="images/logo.png">
+  <meta property="og:image" content="https://www.1stnation.us/images/hero-home.webp">
   <meta property="og:url" content="https://1stnation.us">
 </head>
 <body>
@@ -34,13 +37,41 @@
 
   <main>
 
-    <!-- HERO -->
-    <section class="band dark hero on-dark">
+    <!-- HERO: key art with hotspots over its cards and icon bar -->
+    <section class="hero-art" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="sr-only">The ledger said one thing. Your bloodline says another.</h1>
+      <div class="hero-art-frame">
+        <img src="images/hero-home.webp" width="1672" height="941" fetchpriority="high"
+             alt="Three generations of an Afro-Indigenous family look skyward above sepia family photographs, a magnifying glass, a United States Census page and a Dawes Roll card. Text reads: The ledger said one thing. Your bloodline says another. Discover the paper trail. Trace your ancestry. Reclaim your story.">
+        <div class="dust" aria-hidden="true"></div>
+        <a class="hotspot" style="left:75.8%;top:4.2%;width:23.4%;height:12.6%" href="history.html" aria-label="The Paper Trail: understand historical records and classifications"></a>
+        <a class="hotspot" style="left:75.8%;top:18%;width:23.4%;height:14.2%" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener" aria-label="Search the Dawes Rolls (opens the Oklahoma Historical Society archive)"></a>
+        <a class="hotspot" style="left:75.8%;top:33.5%;width:23.4%;height:13.8%" href="reclaim.html#lineage" aria-label="Document your lineage: build your family tree"></a>
+        <a class="hotspot" style="left:75.8%;top:48.6%;width:23.4%;height:13.8%" href="reclaim.html" aria-label="Reclaim your status: know the steps"></a>
+        <a class="hotspot" style="left:75.8%;top:63.7%;width:23.4%;height:14.4%" href="resources.html" aria-label="Resources and guidance"></a>
+        <a class="hotspot bar" style="left:3.4%;top:88.6%;width:14.6%;height:7.8%" href="history.html" aria-label="Historical records"></a>
+        <a class="hotspot bar" style="left:18.8%;top:88.6%;width:14.4%;height:7.8%" href="resources.html" aria-label="Ancestry research"></a>
+        <a class="hotspot bar" style="left:33.8%;top:88.6%;width:13.6%;height:7.8%" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener" aria-label="Dawes Rolls"></a>
+        <a class="hotspot bar" style="left:48.1%;top:88.6%;width:14.2%;height:7.8%" href="reclaim.html#lineage" aria-label="Family lineage"></a>
+        <a class="hotspot bar" style="left:63.1%;top:88.6%;width:19.6%;height:7.8%" href="reclaim.html#scope" aria-label="Self-identification"></a>
+        <a class="hotspot bar" style="left:83.4%;top:88.6%;width:14.8%;height:7.8%" href="contact.html" aria-label="Guidance"></a>
+      </div>
+      <nav class="hero-paths" aria-label="Start here">
+        <a class="path-card" href="history.html"><span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#doc"/></svg></span><span><h3>The Paper Trail</h3><p>Understand historical records and classifications.</p></span></a>
+        <a class="path-card" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener"><span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#search"/></svg></span><span><h3>Search the Dawes Rolls</h3><p>Explore and search the Dawes Rolls archive.</p></span></a>
+        <a class="path-card" href="reclaim.html#lineage"><span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#tree"/></svg></span><span><h3>Document Your Lineage</h3><p>Build your family tree and connect the generations.</p></span></a>
+        <a class="path-card" href="reclaim.html"><span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#clipboard"/></svg></span><span><h3>Reclaim Your Status</h3><p>Know the steps, gather records, understand the process.</p></span></a>
+        <a class="path-card" href="resources.html"><span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#book"/></svg></span><span><h3>Resources &amp; Guidance</h3><p>Articles, tools, and expert support for your research.</p></span></a>
+      </nav>
+    </section>
+
+    <!-- INTRO: the ledger -->
+    <section class="band dark hero-intro on-dark">
       <div class="wrap">
-        <div class="hero-grid">
-          <div>
-            <span class="eyebrow on-dark">1st Nation Foundation &middot; 1stnation.us</span>
-            <h1>The ledger said one thing.<br><span class="em brass">Your bloodline says another.</span></h1>
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow on-dark">What the clerks wrote</span>
+            <h2>They wrote a label. <span class="em">You carry a lineage.</span></h2>
             <p class="lead">For generations, Afro-Indigenous people were written out of their own nations — reclassified on government rolls by clerks who never asked who they were, only looked at what they appeared to be. The record can be corrected. It starts with you.</p>
 
             <div class="ledger-lines" aria-label="Reclassifications struck through, identity reclaimed">
@@ -55,17 +86,10 @@
               <a class="btn btn-outline" href="reclaim.html">How to Reclaim Your Status</a>
             </div>
           </div>
-          <div class="hero-right reveal">
-            <div class="hero-medallion" aria-hidden="true">
-              <span class="hero-medallion-plate">
-                <img src="images/logo.png" alt="">
-              </span>
-            </div>
-            <figure class="hero-figure">
-              <img src="images/family-porch-1900s.jpg" alt="An Afro-Indigenous family photographed on a porch in Indian Territory in the early 1900s">
-              <figcaption>A family of the Five Tribes era, Indian Territory, early 1900s — the generation the Dawes clerks sorted by sight.</figcaption>
-            </figure>
-          </div>
+          <figure class="photo-frame reveal">
+            <img src="images/family-porch-1900s.jpg" alt="An Afro-Indigenous family photographed on a porch in Indian Territory in the early 1900s">
+            <figcaption>A family of the Five Tribes era, Indian Territory, early 1900s — the generation the Dawes clerks sorted by sight.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -82,7 +106,7 @@
             <p>Very many Americans who carry the labels &ldquo;Black,&rdquo; &ldquo;negro,&rdquo; or &ldquo;colored&rdquo; on their family's paperwork are the descendants of the Indigenous, aboriginal peoples of this land. Those labels were not chosen — they were assigned. Assigned by enrollment clerks at the Dawes Commission who sorted families by skin tone instead of lineage. Assigned by registrars like Virginia's Walter Plecker, who rewrote birth certificates by the thousands. Assigned by census takers who marked down what they assumed, not what was true.</p>
             <p>The 1st Nation Foundation exists for one purpose: to help you find your ancestors in the record, document your lineage, and <strong>reclaim the Indigenous identity that was taken from your family on paper</strong>. The misnomers placed upon us through the arbitrary reclassification mechanisms of the past do not have to be carried into the future.</p>
             <p><strong>Our scope is self-identification</strong> — the critical first step in any journey, and the one step that belongs entirely to you. No clerk, no commission, no council controls how you identify on your own records. Questions of tribal enrollment or citizenship are a separate and distinctly different matter, beyond the scope of this site. Identity comes first.</p>
-            <p class="em" style="font-family: Georgia, serif; font-size: 1.15rem; color: var(--oxblood);">You are not what they wrote down. You are who your ancestors were.</p>
+            <p class="em" style="font-family: var(--display); font-size: 1.3rem; color: var(--oxblood);">You are not what they wrote down. You are who your ancestors were.</p>
           </div>
           <figure class="reveal">
             <img src="images/comanche-family.webp" alt="A multigenerational Afro-Indigenous family in a formal studio portrait, an elder wearing a feathered headdress">
@@ -95,22 +119,28 @@
     <!-- THREE PILLARS -->
     <section class="band dark on-dark">
       <div class="wrap">
-        <div class="ledger-head" style="border-bottom-color: var(--brass);">
+        <div class="ledger-head">
           <span class="no">Record 02</span>
           <h2>Three Things Every Descendant Should Know</h2>
         </div>
         <div class="pillars">
           <article class="pillar reveal">
+            <span class="door-no" aria-hidden="true">I</span>
+            <span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#doc"/></svg></span>
             <h3 class="em">The reclassification was real — and documented.</h3>
             <p>It happened in three ways, all in the same record. Some Indigenous people were reclassified through intermarriage erasure. Some were enrolled &ldquo;by blood&rdquo; on the Dawes Rolls and still labeled &ldquo;colored&rdquo; elsewhere because clerks couldn't reconcile dark-skinned Indians with their categories. And some belonged to aboriginal Black nations of this continent — the Yamasee and others — whose very existence the system worked to bury. Three doors to one truth.</p>
             <a class="more" href="history.html">Read the paper trail →</a>
           </article>
           <article class="pillar reveal">
+            <span class="door-no" aria-hidden="true">II</span>
+            <span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#scale"/></svg></span>
             <h3 class="em">History is being corrected on the record.</h3>
             <p>Federal courts affirmed in 2017 that the Treaty of 1866 means what it says. The Cherokee Nation struck &ldquo;by blood&rdquo; from its constitution in 2021. The Muscogee (Creek) Nation's high court ruled likewise in 2025. These battles over enrollment are their own separate matter — but they prove the larger truth: the reclassifications of the past are being unwound.</p>
             <a class="more" href="sovereignty.html">See the modern fight →</a>
           </article>
           <article class="pillar reveal">
+            <span class="door-no" aria-hidden="true">III</span>
+            <span class="icon"><svg aria-hidden="true"><use href="/images/icons.svg#search"/></svg></span>
             <h3 class="em">The records are searchable — today, for free.</h3>
             <p>The Dawes Final Rolls are digitized and publicly searchable through the Oklahoma Historical Society. Enrollment cards and application packets hold names, family ties, and testimony your family may never have seen. The search takes minutes. The discovery can change everything.</p>
             <a class="more" href="reclaim.html">Start your search →</a>
@@ -132,7 +162,7 @@
     <!-- COMMUNITY GALLERY -->
     <section class="band dark on-dark">
       <div class="wrap">
-        <div class="ledger-head" style="border-bottom-color: var(--brass);">
+        <div class="ledger-head">
           <span class="no">Record 03</span>
           <h2>We Have Always Been Here</h2>
         </div>
@@ -147,19 +177,31 @@
     </section>
 
     <!-- CTA BAND -->
-    <section class="band parchment cta-band">
+    <section class="band dark cta-band art on-dark">
+      <div class="dust" aria-hidden="true"></div>
       <div class="wrap reveal">
-        <span class="eyebrow">Begin Today</span>
-        <h2 class="em">Your ancestors are in the record. Go find them.</h2>
-        <p style="color: var(--ink);">Search the Dawes Rolls now, or reach out to the 1st Nation Foundation for guidance on researching your lineage and taking the steps to re-identify appropriately.</p>
+        <span class="eyebrow on-dark">Begin Today</span>
+        <h2 class="em">Your ancestors are in the record. <span class="gold">Go find them.</span></h2>
+        <p>Search the Dawes Rolls now, or reach out to the 1st Nation Foundation for guidance on researching your lineage and taking the steps to re-identify appropriately.</p>
         <div class="btn-row">
-          <a class="btn btn-oxblood" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener">Search the Dawes Rolls</a>
-          <a class="btn btn-outline-dark" href="contact.html">Request Guidance</a>
+          <a class="btn btn-brass" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener">Search the Dawes Rolls</a>
+          <a class="btn btn-outline" href="contact.html">Request Guidance</a>
         </div>
       </div>
     </section>
 
   </main>
+
+  <nav class="path-bar" aria-label="Your path">
+    <ul>
+        <li><a href="history.html"><svg aria-hidden="true"><use href="/images/icons.svg#doc"/></svg><span>Historical Records</span></a></li>
+        <li><a href="resources.html"><svg aria-hidden="true"><use href="/images/icons.svg#search"/></svg><span>Ancestry Research</span></a></li>
+        <li><a href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="/images/icons.svg#scroll"/></svg><span>Dawes Rolls</span></a></li>
+        <li><a href="reclaim.html#lineage"><svg aria-hidden="true"><use href="/images/icons.svg#tree"/></svg><span>Family Lineage</span></a></li>
+        <li><a href="reclaim.html#scope"><svg aria-hidden="true"><use href="/images/icons.svg#idcard"/></svg><span>Self-Identification</span></a></li>
+        <li><a href="contact.html"><svg aria-hidden="true"><use href="/images/icons.svg#book"/></svg><span>Guidance</span></a></li>
+    </ul>
+  </nav>
 
   <footer class="site-footer">
     <div class="wrap">
@@ -192,7 +234,7 @@
       </div>
       <div class="footer-legal">
         <span>&copy; <span id="year">2026</span> 1st Nation Foundation &middot; 1stnation.us</span>
-        <span class="em" style="font-family: Georgia, serif;">Reclassified no more.</span>
+        <span class="em">Reclassified no more.</span>
       </div>
     </div>
   </footer>

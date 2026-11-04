@@ -6,6 +6,9 @@
   <title>Reclaim Your Indigenous Status — Step by Step | 1st Nation Foundation</title>
   <meta name="description" content="A practical, step-by-step guide to searching the Dawes Rolls, ordering enrollment packets, cross-referencing the National Archives, and reclaiming your Indigenous identity.">
   <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Source+Sans+3:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -30,22 +33,15 @@
 
   <main>
 
-    <section class="band dark page-hero on-dark">
+    <section class="band dark page-hero on-dark" style="--hero:url(/images/art-reclaim.webp)">
+      <div class="dust" aria-hidden="true"></div>
       <div class="wrap">
-        <div class="hero-grid">
-          <div>
             <span class="eyebrow on-dark">Reclaim Your Status</span>
             <h1>The Search Takes Minutes. <span class="em brass">The Reclamation Lasts Forever.</span></h1>
             <p class="lead">The Dawes Final Rolls are digitized, free, and publicly searchable. Here is exactly how to find your ancestors, read what the clerks wrote, and begin the work of re-identifying as who you truly are.</p>
             <div class="btn-row">
               <a class="btn btn-brass" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener">Open the Dawes Search Now</a>
             </div>
-          </div>
-          <figure class="hero-figure reveal">
-            <img src="images/powwow-dancer.jpg" alt="An Afro-Indigenous powwow dancer in full regalia, smiling, being congratulated">
-            <figcaption>Reclamation looks like this. Standing in the circle, in your own name.</figcaption>
-          </figure>
-        </div>
       </div>
     </section>
 
@@ -88,7 +84,7 @@
               <p>Verify and deepen your findings with the National Archives' Dawes records: microfilm <strong>M1186</strong> (enrollment cards), <strong>M1301</strong> (application jackets), and <strong>T529</strong> (the Final Rolls), held at the National Archives at Fort Worth. Also check the earlier and parallel rolls — the <strong>Wallace Roll</strong> and <strong>Kern-Clifton Roll</strong> (Cherokee Freedmen, 1889–1897), the <strong>Guion Miller Roll</strong> (Eastern Cherokee, 1906–1911), and the <strong>Baker Roll</strong> (Eastern Band Cherokee, 1924–1928).</p>
             </div>
           </li>
-          <li class="reveal">
+          <li class="reveal" id="lineage">
             <div>
               <h3 class="em">Build your documented lineage</h3>
               <p>Connect yourself to your Dawes-era ancestor generation by generation with birth, marriage, and death certificates. This documented chain is the foundation of your self-identification — your family's corrected record, assembled by your own hands. Keep originals safe; work from certified copies.</p>
@@ -104,7 +100,7 @@
       </div>
     </section>
 
-    <section class="band bone">
+    <section class="band bone" id="scope">
       <div class="wrap">
         <div class="ledger-head">
           <span class="no">The Scope</span>
@@ -129,13 +125,13 @@
             <span class="eyebrow on-dark">What You'll Need</span>
             <h2 style="margin-bottom: 1.2rem;">Your Research Checklist</h2>
             <p style="color: rgba(241,232,216,0.88);">Walk in prepared. To search effectively you will want:</p>
-            <ul style="list-style: none; margin-top: 0.5rem;">
-              <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(241,232,216,0.14);">◆ &nbsp;Full names of ancestors (with maiden names and variant spellings)</li>
-              <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(241,232,216,0.14);">◆ &nbsp;Approximate birth years and family relationships</li>
-              <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(241,232,216,0.14);">◆ &nbsp;Any connection to Oklahoma / Indian Territory, 1898–1914</li>
-              <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(241,232,216,0.14);">◆ &nbsp;The tribal nation, if family memory preserves it</li>
-              <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(241,232,216,0.14);">◆ &nbsp;Family documents: Bibles, obituaries, letters, photographs</li>
-              <li style="padding: 0.6rem 0;">◆ &nbsp;Patience and persistence — the record keepers misspelled, but they recorded</li>
+            <ul class="checklist">
+              <li>Full names of ancestors (with maiden names and variant spellings)</li>
+              <li>Approximate birth years and family relationships</li>
+              <li>Any connection to Oklahoma / Indian Territory, 1898–1914</li>
+              <li>The tribal nation, if family memory preserves it</li>
+              <li>Family documents: Bibles, obituaries, letters, photographs</li>
+              <li>Patience and persistence — the record keepers misspelled, but they recorded</li>
             </ul>
             <div class="btn-row">
               <a class="btn btn-brass" href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener">Begin Your Search</a>
@@ -145,18 +141,30 @@
       </div>
     </section>
 
-    <section class="band parchment cta-band">
+    <section class="band dark cta-band art on-dark">
+      <div class="dust" aria-hidden="true"></div>
       <div class="wrap reveal">
-        <span class="eyebrow">You Are Not Alone in This</span>
-        <h2 class="em">Need help reading what you find?</h2>
-        <p style="color: var(--ink);">Enrollment cards, application packets, conflicting rolls — the records can be dense. The 1st Nation Foundation offers guidance to descendants at every stage: starting the search, interpreting the documents, and taking the steps to re-identify appropriately.</p>
+        <span class="eyebrow on-dark">You Are Not Alone in This</span>
+        <h2 class="em">Need help reading <span class="gold">what you find?</span></h2>
+        <p>Enrollment cards, application packets, conflicting rolls — the records can be dense. The 1st Nation Foundation offers guidance to descendants at every stage: starting the search, interpreting the documents, and taking the steps to re-identify appropriately.</p>
         <div class="btn-row">
-          <a class="btn btn-oxblood" href="contact.html">Request More Information</a>
+          <a class="btn btn-brass" href="contact.html">Request More Information</a>
         </div>
       </div>
     </section>
 
   </main>
+
+  <nav class="path-bar" aria-label="Your path">
+    <ul>
+        <li><a href="history.html"><svg aria-hidden="true"><use href="/images/icons.svg#doc"/></svg><span>Historical Records</span></a></li>
+        <li><a href="resources.html"><svg aria-hidden="true"><use href="/images/icons.svg#search"/></svg><span>Ancestry Research</span></a></li>
+        <li><a href="https://www.okhistory.org/research/dawes" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="/images/icons.svg#scroll"/></svg><span>Dawes Rolls</span></a></li>
+        <li><a href="reclaim.html#lineage"><svg aria-hidden="true"><use href="/images/icons.svg#tree"/></svg><span>Family Lineage</span></a></li>
+        <li><a href="reclaim.html#scope"><svg aria-hidden="true"><use href="/images/icons.svg#idcard"/></svg><span>Self-Identification</span></a></li>
+        <li><a href="contact.html"><svg aria-hidden="true"><use href="/images/icons.svg#book"/></svg><span>Guidance</span></a></li>
+    </ul>
+  </nav>
 
   <footer class="site-footer">
     <div class="wrap">
@@ -189,7 +197,7 @@
       </div>
       <div class="footer-legal">
         <span>&copy; <span id="year">2026</span> 1st Nation Foundation &middot; 1stnation.us</span>
-        <span class="em" style="font-family: Georgia, serif;">Reclassified no more.</span>
+        <span class="em">Reclassified no more.</span>
       </div>
     </div>
   </footer>
