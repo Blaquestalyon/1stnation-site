@@ -1021,9 +1021,8 @@ h3 { font-size: clamp(1.2rem, 2.3vw, 1.5rem); }
 .site-footer a:hover { color: var(--brass-light); text-decoration: underline; }
 .site-footer ul { list-style: none; }
 .site-footer li { margin-bottom: 0.55rem; }
-.footer-brand { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; }
-.footer-brand img { height: 64px; width: 64px; object-fit: cover; mix-blend-mode: lighten; }
-.footer-brand span { font-family: var(--display); font-style: italic; font-size: 1.3rem; color: var(--parchment); }
+.footer-brand { margin-bottom: 1.2rem; }
+.footer-brand img { width: 220px; height: auto; filter: drop-shadow(0 0 14px rgba(201, 155, 63, 0.25)); }
 .footer-legal {
   margin-top: 2.8rem;
   padding-top: 1.4rem;
